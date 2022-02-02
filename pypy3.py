@@ -1,8 +1,6 @@
 #1000 A+B
-from bdb import Breakpoint
-
-
 input_data = input().split(' ')
+
 # 1 3
 A = int(input_data[0])
 B = int(input_data[1])
@@ -114,10 +112,6 @@ b =int(input_data[1] )
 c=2*b-a
 print(c)
 
-#10951 A+B-4
-while 1:
-    a, b= map(int, input().split())
-    print(a + b)
 
 #5717 상근이의 친구들
 while 1: 
@@ -175,6 +169,11 @@ print(((a%c)*(b%c))%c)
 print("강한친구 대한육군")
 print("강한친구 대한육군")
 
+# 10818 최소, 최대
+cnt = int(input())
+numbers = list(map(int, input().split()))
+print(min(numbers),max(numbers))
+
 #10869 사칙연산
 himdulda = input().split(" ")
 A = int(himdulda[0])
@@ -203,6 +202,14 @@ for i in range(test_case):
     A = int(input_data[0])
     B = int(input_data[1])
     print(A + B) 
+
+#10951 A+B-4
+while True:
+    try:
+        A, B = map(int, input().split())
+        print(A+B)
+    except:
+        break
 
 #10952 A+B-5
 while 1:
